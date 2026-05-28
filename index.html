@@ -22,31 +22,36 @@
 <body style="font-family:Marcellus, sans-serif">
   <div class="bg-white">
     <!-- navbar -->
-    <div class="navbar shadow-lg bg-white text-neutral-content">
+    <div class="navbar shadow-lg bg-white text-neutral-content animate-fade-in" data-animate="fade-in">
       <div class="flex-1 px-2 mx-2">
         <span class="text-lg font-bold text-neutral">
                 Overbrim
               </span>
       </div> 
       <div class="flex-none m-2">
-        <a class="size-fit p-2 text-white transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300 ..." href="mailto:gnic.tech1@gmail.com?subject=Overbrim%20Technology&body=Hello%20Overbrim%20Technology%20Team%21">
+        <a class="size-fit p-2 text-white transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300 glow-button" href="mailto:gnic.tech1@gmail.com?subject=Overbrim%20Technology&body=Hello%20Overbrim%20Technology%20Team%21">
           Find us
         </a>
       </div>
     </div>
     <!-- Hero -->
-    <div class="hero min-h-screen bg-base-200" style="background-image: url('images/hero-1.png')">
+    <div class="hero min-h-screen bg-base-200 animate-fade-in" data-animate="fade-in" style="background-image: url('images/hero-1.png')">
+      <div class="hero-overlay">
+        <span class="hero-bubble bubble-1"></span>
+        <span class="hero-bubble bubble-2"></span>
+        <span class="hero-bubble bubble-3"></span>
+      </div>
       <div class="text-center hero-content">
         <div class="max-w-full m-4">
-          <h1 class="text-white text-5xl 2xl:text-7xl xl:text-7xl lg:text-7xl md:text-5xl sm:text-5xl xs:text-5xl font-bold">
+          <h1 class="hero-title text-white text-5xl 2xl:text-7xl xl:text-7xl lg:text-7xl md:text-5xl sm:text-5xl xs:text-5xl font-bold">
             Get the most strategic partnership for your enterprise and passion.
               </h1> 
         </div>
       </div>
     </div>    
     <!-- About -->
-    <div class="bg-base grid grid-cols-2 text-center justify-center items-center p-5 m-4 text-black">
-      <h1 class="2xl:text-5xl xl:text-5xl lg:text-5xl md:text-3xl sm:text-3xl"">
+    <div class="bg-base grid grid-cols-2 text-center justify-center items-center p-5 m-4 text-black reveal" data-animate="slide-up">
+      <h1 class="2xl:text-5xl xl:text-5xl lg:text-5xl md:text-3xl sm:text-3xl">
         About
       </h1>
       <div class="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl sm:text-xl">Overbrim is a safe space for you to get strategic partnership for your enterprise and passion. Our services are topnotch, and we do care about your performance and success.
@@ -54,13 +59,13 @@
     </div>
     <!-- Services -->
     <div class="pt-5 text-black">
-      <h1 class="items-center justify-center text-center 2xl:text-5xl xl:text-5xl lg:text-5xl md:text-3xl sm:text-3xl">
+      <h1 class="items-center justify-center text-center 2xl:text-5xl xl:text-5xl lg:text-5xl md:text-3xl sm:text-3xl reveal" data-animate="slide-up">
         Our Services
       </h1>
       <div class="flex grid grid-rows-4 p-5 gap-10">
         <!-- Automation -->
-        <div id="automation" class="grid grid-cols-2 gap-3 text-black">
-          <div class="2xl:place-self-center xl:place-self-center lg:2xl:place-self-center mr-3">
+        <div id="automation" class="grid grid-cols-2 gap-3 text-black reveal service-card" data-animate="slide-up">
+          <div class="2xl:place-self-center xl:place-self-center lg:2xl:place-self-center m-5">
             <h1 class="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-xl sm:text-xl">
               Automation
             </h1>
@@ -69,11 +74,11 @@
             </div>
             <a class="size-fit p-2 text-white transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300 ..." href="mailto:gnic.tech1@gmail.com?subject=Automation%20Request">Try This Service</a> 
           </div>
-          <img class="size-fit" src="images/automation-small.jpg">
+          <img class="size-fit service-image" src="images/automation-small.jpg">
         </div>
         <!-- Economic Analytics -->
-        <div id="economic-analytics" class="grid grid-cols-2 gap-3 text-black">
-          <img class="size-fit" src="images/economic-analytics-small.jpg">
+        <div id="economic-analytics" class="grid grid-cols-2 gap-3 text-black reveal service-card" data-animate="slide-up">
+          <img class="size-fit service-image" src="images/economic-analytics-small.jpg">
           <div class="2xl:place-self-center xl:place-self-center lg:2xl:place-self-center ml-3">
             <h1 class="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-xl sm:text-xl">
               Economic Analytics
@@ -85,8 +90,8 @@
           </div>
         </div>
         <!-- Design -->
-        <div id="design" class="grid grid-cols-2 gap-3 text-black">
-          <div class="2xl:place-self-center xl:place-self-center lg:2xl:place-self-center mr-3">
+        <div id="design" class="grid grid-cols-2 gap-3 text-black reveal service-card" data-animate="slide-up">
+          <div class="2xl:place-self-center xl:place-self-center lg:2xl:place-self-center m-5">
             <h1 class="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-xl sm:text-xl">
               Design
             </h1>
@@ -95,11 +100,11 @@
             </div>
             <a class="size-fit p-2 text-white transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300 ..." href="mailto:gnic.tech1@gmail.com?subject=Design%20Request">Try This Service</a> 
           </div>
-          <img class="size-fit" src="images/design-small.jpg">
+          <img class="size-fit service-image" src="images/design-small.jpg">
         </div>
         <!-- Online Services -->
-        <div id="online-services" class="grid grid-cols-2 gap-3 text-black">
-          <img class="size-fit" src="images/online-services-small.jpg">
+        <div id="online-services" class="grid grid-cols-2 gap-3 text-black reveal service-card" data-animate="slide-up">
+          <img class="size-fit service-image" src="images/online-services-small.jpg">
           <div class="2xl:place-self-center xl:place-self-center lg:2xl:place-self-center ml-3">
             <h1 class="2xl:text-3xl xl:text-3xl lg:text-3xl md:text-xl sm:text-xl">
               Online Services
@@ -113,7 +118,7 @@
       </div>
     </div>
     <!-- footer  -->
-    <footer class="p-10 footer bg-base-200 text-base-content items-center">
+    <footer class="p-10 footer bg-base-200 text-base-content items-center reveal" data-animate="slide-up">
       <div class="">
         <p>Overbrim Technologies
           <br>Strategic Technology Partner
